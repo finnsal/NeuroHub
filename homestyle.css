@@ -1,10 +1,14 @@
 
 body {
- font-family: "Helvetica";
+  background-image: url("https://wallpapercave.com/wp/wCKDW28.jpg");
+  background-color: #cccccc;
+  font-family: "Helvetica";
+
 }
 
 .title{
  font-family: "Helvetica";
+ color: #f0f7f7;
  font-size: 60px;
  padding-bottom: 0px;
  display: inline-block;
@@ -14,13 +18,16 @@ body {
  padding-top: 0px;
  font-size: 30px;
  font-family: "Helvetica";
+ color: #f0f7f7;
 }
+
 .datebtn {
  width: 4%;
  height: 4%;
  display: inline-block;
  padding-bottom: 0px;
 }
+
 .topsection {
  padding-left:540px;
  padding-top: 50px;
@@ -34,10 +41,11 @@ body {
  margin-bottom: 5.5px;
  margin-top: 5.5px;
  border: 1px solid;
+ color: #f0f7f7;
 }
 
 .footer {
- color: blue;
+ color: #f0f7f7;
 }
 .settingsbtn {
  width:2%;
