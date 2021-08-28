@@ -77,13 +77,19 @@
 
 
 
-    <div class="todo" id='mydiv'>
-      <div id="mydiv" class="header"><h1>To do:</h1></div>
+    <div class="todo">
+      <div class="header"><h1>To do:</h1></div>
         <ul id="myUL" style = "list-style-type: none;">
           <li><input type="checkbox">Test</input></li>
         </ul>
+        <div id="myDIV">
+          <input type="text" id="myInput" placeholder="Add task..."  style="display: inline-block;">
+          <span onclick="newElement()" class="addBtn">+</span>
+        </div>
+        <!--
         <input type="text" id="myInput" placeholder="Add task..."  style="display: inline-block;">
         <span onclick="newElement()" class="addBtn" style="display: inline-block;"><img src="https://www.pinclipart.com/picdir/middle/39-398105_image-plus-png-i-shall-seal-the-heavens.png" style = "width: 10%; height: 10%;"></span>
+      -->
     </div>
   </body>
 

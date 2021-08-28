@@ -41,7 +41,7 @@ body {
  margin-bottom: 5.5px;
  margin-top: 5.5px;
  border: 1px solid;
- color: #f0f7f7;
+ color: #0b8074;
 }
 
 .footer {
@@ -51,7 +51,9 @@ body {
  width:2%;
  height: 2%;
 }
-
+ul li {
+  color = #eb4034;
+}
 ul li:nth-child(odd) {
  background: #f9f9f9;
 }
