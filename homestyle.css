@@ -68,10 +68,9 @@ ul li:nth-child(odd) {
 }
 ul li:hover {
  background: rgba(204, 204, 204, 0.5);
- text-decoration: line-through;
 }
 ul li:checked{
-
+  text-decoration: line-through;
 }
 ul li:{
  background: #eb4034;
