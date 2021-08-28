@@ -45,16 +45,16 @@ body {
 }
 
 .todo{
- height: 250px;
- width: 200px;
+ text-align: center;
+ height: 320px;
+ width: 220px;
  background: rgba(204, 204, 204, 0.5);
- margin-right: 100px;
- margin-left: 30px;
- margin-bottom: 00px;
- margin-top: 00px;
+ margin-right: 0px;
+ margin-left: 25px;
+ margin-bottom: 0px;
+ margin-top: 0px;
  color: white;
  border-radius: 10px;
-
 }
 
 
@@ -69,7 +69,10 @@ body {
 }
 
 ul li {
-  text-align: left;
+  margin-right: 0px;
+  margin-left: -100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   font-size: 20px;
   background: rgba(204, 204, 204, 0);
   border-radius: 5px;
