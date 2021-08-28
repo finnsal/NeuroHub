@@ -36,12 +36,13 @@ body {
 .todo{
  height: 187px;
  width: 187px;
+ background-color: #0b8074;
  margin-right: 5.5px;
  margin-left: 5.5px;
  margin-bottom: 5.5px;
  margin-top: 5.5px;
  border: 1px solid;
- color: #0b8074;
+ color: ##5ac4b9;
 }
 
 .needhelp {
@@ -53,10 +54,10 @@ body {
  height: 2%;
 }
 ul li {
-  color = #eb4034;
+  background: #a2abaa;
 }
 ul li:nth-child(odd) {
- background: #f9f9f9;
+ background: #c7f0ec;
 }
 ul li:hover {
  background: #ddd;
