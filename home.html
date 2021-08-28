@@ -71,6 +71,9 @@
       <script> document.write(new Date().toLocaleDateString()); </script>
       </p>
       <div class="dailycalendar">
+        <ul id="tasks">
+          <li></li>
+        </ul>
         <p id="demo"></p>
         <form id="test">
           <input type="text" placeholder="Class">
@@ -79,13 +82,16 @@
         <button onclick ="myFunction()">Add</button>
         <script>
           function myFunction() {
-            var x = document.getElementById("testform");
+            var x = document.getElementById("test");
+            var li = document.createElement("li");
             var text = "";
             var i;
             for (i = 0; i < x.length ;i++) {
               text += x.elements[i].value + "<br>";
+              //*li.appendchild(text);
             }
-            document.getElementById("demo").innerHTML = text;
+            /*document.getElementById("tasks").appendChild(li);*/
+            document.getElementById("tasks").innerHTML = text;
           }
         </script>
         <p id="calendarcode"></p>
