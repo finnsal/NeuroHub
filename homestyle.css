@@ -70,3 +70,17 @@ showTime();
   width:2%;
   height: 2%;
 }
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li {
+
+}
