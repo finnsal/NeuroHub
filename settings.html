@@ -15,7 +15,7 @@
    <div class="return">
      <a href="home.html"><button class='returnbtn'>Back to home</button></a>
    </div>
-   <form action="" method="get">
+   <form action="" method="GET">
      <fieldset>
        <legend class="calendartable">Add activity:</legend>
        <p>Class name:</p>
@@ -49,6 +49,9 @@
       </fieldset>
       </form>
       <p><script> document.write(activitylist) </script></p>
+      <?php
+        echo($_GET['activityname']);
+      ?>
 
      <!--
      <div class="typedropdown">
@@ -63,6 +66,5 @@
          </div>
      </div>
      -->
-    </form>
   </body>
 </html>
