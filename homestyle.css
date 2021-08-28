@@ -8,17 +8,21 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
+.dailycalendar {
+  padding-left: 10px;
+}
 .title{
  font-family: "Helvetica";
  color: #f0f7f7;
  font-size: 60px;
  padding-bottom: 0px;
+ padding-left: 0px;
  display: inline-block;
 }
 
 .date{
  padding-top: 0px;
+ padding-left: 10px;
  font-size: 30px;
  font-family: "Helvetica";
  color: #f0f7f7;
@@ -32,7 +36,7 @@ body {
 }
 
 .topsection {
- padding-left:540px;
+ padding-left:520px;
  padding-top: 50px;
 }
 
