@@ -45,6 +45,7 @@ body {
  border-radius: 10px;
 }
 
+
 .needhelp {
  color: #f0f7f7;
 }
@@ -53,14 +54,16 @@ body {
  width:2%;
  height: 2%;
 }
+
 ul li {
-  background: #a2abaa;
+  font-size: 18px;
+  background: rgba(204, 204, 204, 0);
 }
 ul li:nth-child(odd) {
- background: #c7f0ec;
+ background: rgba(204, 204, 204, 0);
 }
 ul li:hover {
- background: #ddd;
+ background: rgba(204, 204, 204, 0.5);
 }
 ul li.onclick(){
  background: #eb4034;
