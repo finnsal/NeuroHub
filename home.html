@@ -71,6 +71,23 @@
       <script> document.write(new Date().toLocaleDateString()); </script>
       </p>
       <div class="dailycalendar">
+        <p id="demo"></p>
+        <form id="test">
+          <input type="text" placeholder="Class">
+          <input type="time">
+        </form>
+        <button onclick ="myFunction()">Add</button>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("testform");
+            var text = "";
+            var i;
+            for (i = 0; i < x.length ;i++) {
+              text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+          }
+        </script>
         <p id="calendarcode"></p>
       </div>
       <div class="settings">
