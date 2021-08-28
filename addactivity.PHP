@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+echo "hello"
+  echo($_GET['activityname']);
+?>
 <html>
   <head>
     <link rel="stylesheet" href="settingsstylesheet.css">
