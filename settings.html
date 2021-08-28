@@ -3,19 +3,13 @@
   <head>
     <link rel="stylesheet" href="settingsstylesheet.css">
     <title>Settings</title>
-    <script>
-      activitylist = document.getElementsByTagName("activityname");
-      function todaystasks() {
-        System.out.println(activitylist);
-      }
-    </script>
   </head>
 
   <body>
    <div class="return">
      <a href="home.html"><button class='returnbtn'>Back to home</button></a>
    </div>
-   <form action="" method="GET">
+   <form method="GET" id="testform">
      <fieldset>
        <legend class="calendartable">Add activity:</legend>
        <p>Class name:</p>
@@ -48,10 +42,19 @@
        <br><a href="home.html"><input type="submit" value="Add activity"></a>
       </fieldset>
       </form>
-      <p><script> document.write(activitylist) </script></p>
-      <?php
-        echo($_GET['activityname']);
-      ?>
+      <button onclick ="myFunction()">Test</button>
+      <p id="demo"></p>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("testform");
+          var text = "";
+          var i;
+          for (i = 0; i < x.length ;i++) {
+            text += x.elements[i].value + "<br>";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+      </script>
 
      <!--
      <div class="typedropdown">

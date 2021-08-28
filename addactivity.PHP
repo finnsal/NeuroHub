@@ -1,7 +1,4 @@
-<?php
-echo "hello"
-  echo($_GET['activityname']);
-?>
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="settingsstylesheet.css">
@@ -15,6 +12,9 @@ echo "hello"
   </head>
 
   <body>
+    <div style="background-color: blue;">
+      <p>hello</p>
+    </div>
    <div class="return">
      <a href="home.html"><button class='returnbtn'>Back to home</button></a>
    </div>
@@ -51,11 +51,6 @@ echo "hello"
        <br><a href="home.html"><input type="submit" value="Add activity"></a>
       </fieldset>
       </form>
-      <p><script> document.write(activitylist) </script></p>
-      <?php
-        echo($_GET['activityname']);
-      ?>
-
      <!--
      <div class="typedropdown">
          <button class="typebtn">Type</button>
