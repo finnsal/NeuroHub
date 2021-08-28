@@ -1,5 +1,4 @@
 .title{
-  text-align: center;
   font-family: serif;
   display: inline-block;
 }
@@ -7,6 +6,15 @@
 .date{
   text-align: center;
   font-family: serif;
+}
+.datebtn {
+  width: 2%;
+  height: 2%;
+  display: inline-block;
+}
+.topsection {
+  padding-left:580px;
+  padding-top: 50px;
 }
 
 .todo{
@@ -25,9 +33,4 @@
 .settingsbtn {
   width:2%;
   height: 2%;
-}
-.datebtn {
-  width: 2%;
-  height: 2%;
-  display: inline-block;
 }
