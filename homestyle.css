@@ -83,14 +83,22 @@ ul li {
 ul li:hover {
  background: rgba(204, 204, 204, 0.5);
 }
-ul li:active{
+ul li.checked{
+  background: #888;
+  color: #fff;
   text-decoration: line-through;
 }
-ul li:{
- background: #eb4034;
- color: #fff;
- text-decoration: line-through;
-}
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
 
 input {
   type = "checkbox";
