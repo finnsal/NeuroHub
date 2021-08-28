@@ -1,6 +1,7 @@
 .title{
   text-align: center;
   font-family: serif;
+  display: inline-block;
 }
 
 .date{
@@ -15,13 +16,9 @@
   margin-left: 5.5px;
   margin-bottom: 5.5px;
   margin-top: 5.5px;
+  border: 1px solid;
 }
 
-.daily {
-  color: red;
-  font-size: 12px;
-  font-family: sans-serif;
-}
 .footer {
   color: blue;
 }
@@ -32,8 +29,5 @@
 .datebtn {
   width: 2%;
   height: 2%;
-  display: inline-block;
-}
-.title {
   display: inline-block;
 }
