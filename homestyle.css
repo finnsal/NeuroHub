@@ -1,5 +1,10 @@
+body {
+  font-family: "Helvetica";
+}
 .title{
-  font-family: serif;
+  font-family: "Helvetica";
+  font-size: 60px;
+  padding-bottom: 0px;
   display: inline-block;
 }
 .clock{
@@ -13,16 +18,18 @@
   letter-spacing: 7px;
 }
 .date{
-  text-align: center;
-  font-family: serif;
+  padding-top: 0px;
+  font-size: 30px;
+  font-family: "Helvetica";
 }
 .datebtn {
-  width: 2%;
-  height: 2%;
+  width: 4%;
+  height: 4%;
   display: inline-block;
+  padding-bottom: 0px;
 }
 .topsection {
-  padding-left:580px;
+  padding-left:540px;
   padding-top: 50px;
 }
 
