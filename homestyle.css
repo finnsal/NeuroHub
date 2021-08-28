@@ -34,15 +34,6 @@ body {
 }
 
 .todo{
- height: 187px;
- width: 187px;
- background-color: #0b8074;
- margin-right: 5.5px;
- margin-left: 5.5px;
- margin-bottom: 5.5px;
- margin-top: 5.5px;
- border: 1px solid;
- color: black;
  height: 250px;
  width: 200px;
  background: rgba(204, 204, 204, 0.5);
