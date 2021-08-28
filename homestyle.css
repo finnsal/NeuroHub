@@ -57,7 +57,7 @@ body {
 }
 
 ul li {
-  font-size: 18px;
+  font-size: 20px;
   background: rgba(204, 204, 204, 0);
 }
 ul li:nth-child(odd) {
@@ -65,8 +65,9 @@ ul li:nth-child(odd) {
 }
 ul li:hover {
  background: rgba(204, 204, 204, 0.5);
+ text-decoration: line-through;
 }
-ul li:newElement(){
+ul li:{
  background: #eb4034;
  color: #fff;
  text-decoration: line-through;
