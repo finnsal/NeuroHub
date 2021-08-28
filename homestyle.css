@@ -59,8 +59,8 @@ ul li:nth-child(odd) {
 ul li:hover {
  background: #ddd;
 }
-ul li.checked {
- background: #888;
+ul li.onclick(){
+ background: #eb4034;
  color: #fff;
  text-decoration: line-through;
 }
