@@ -71,8 +71,8 @@
       <script> document.write(new Date().toLocaleDateString()); </script>
       </p>
       <div class="dailycalendar">
-        <ul id="tasks">
-          <li></li>
+        <ul>
+          <li id="tasks"></li>
         </ul>
         <p id="demo"></p>
         <form id="test">
@@ -88,9 +88,9 @@
             var i;
             for (i = 0; i < x.length ;i++) {
               text += x.elements[i].value + "<br>";
-              //*li.appendchild(text);
+              //li.appendChild(x.elements[i].value);
             }
-            /*document.getElementById("tasks").appendChild(li);*/
+            //document.getElementById("tasks").appendChild(li);
             document.getElementById("tasks").innerHTML = text;
           }
         </script>
