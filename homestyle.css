@@ -12,6 +12,8 @@ body {
   padding-left: 10px;
 }
 .settings {
+  margin-right: 0px;
+  margin-top: 0px;
 }
 .title{
  font-family: "Helvetica";
@@ -58,6 +60,7 @@ body {
 
 .needhelp {
  color: #f0f7f7;
+ padding-left: 10px;
 }
 
 .settingsbtn {
