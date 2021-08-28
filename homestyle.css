@@ -65,7 +65,7 @@ ul li:nth-child(odd) {
 ul li:hover {
  background: rgba(204, 204, 204, 0.5);
 }
-ul li.onclick(){
+ul li:newElement(){
  background: #eb4034;
  color: #fff;
  text-decoration: line-through;
