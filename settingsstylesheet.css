@@ -1,7 +1,14 @@
-body {
-  font-family: "Helvetica";
-}
 
+body {
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Calming-Wallpapers-HD-Free-Download.jpg);
+  background-color: #cccccc;
+  background-size: cover;
+  font-family: "Helvetica";
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
 /* Dropdown Button */
 .typebtn {
   background-color: #04AA6D;
