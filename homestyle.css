@@ -55,6 +55,7 @@ ul li.checked {
  color: #fff;
  text-decoration: line-through;
 }
-ul li {
 
+input {
+  type = "checkbox";
 }

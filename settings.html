@@ -3,9 +3,10 @@
   <head>
     <link rel="stylesheet" href="settingsstylesheet.css">
     <title>Settings</title>
-    <script type = "text/JavaScript">
-      function Hello() {
-        alert("Hello, World");
+    <script>
+      activitylist = document.getElementsByTagName("activityname");
+      function todaystasks() {
+        System.out.println(activitylist);
       }
     </script>
   </head>
@@ -14,13 +15,13 @@
    <div class="return">
      <a href="home.html"><button class='returnbtn'>Back to home</button></a>
    </div>
-   <form action="calendar.html" method="post">
+   <form method="post">
      <fieldset>
        <legend class="calendartable">Add activity:</legend>
        <p>Class name:</p>
        <textarea rows="1" cols="64" name="activityname">Enter class name</textarea>
        <p>Type:</p>
-       <select name="activitytype">
+       <select id="activitytype">
          <option>Class</option>
          <option>Tutorial</option>
          <option>Lecture</option>
@@ -28,7 +29,7 @@
          <option>Test</option>
        </select>
        <p>Day:</p>
-       <select name="activityday">
+       <select id="activityday">
          <option>Monday</option>
          <option>Tuesday</option>
          <option>Wednesday</option>
@@ -37,15 +38,16 @@
          <option>Saturday</option>
          <option>Sunday</option>
        </select>
-       <p>Date:</p><input type="date" name="activitydate">
-       <p>Start time:</p><input type="time" name="starttime"></input>
-       <p>End time:</p><input type="time" name="endtime"></input>
-       <p>Class link:</p><input type="url" name="classurl"></input> <br>
+       <p>Date:</p><input type="date" id="activitydate">
+       <p>Start time:</p><input type="time" id="starttime"></input>
+       <p>End time:</p><input type="time" id="endtime"></input>
+       <p>Class link:</p><input type="url" id="classurl"></input> <br>
        <p>Repeat weekly?</p>
-       <label>Yes</label><input type="radio" name="weekly"> <br>
-       <label>No</label><input type="radio" name="weekly"> <br>
-       <br> <input type="submit" value="Add activity">
+       <label>Yes</label><input type="radio" id="weekly"> <br>
+       <label>No</label><input type="radio" id="weekly"> <br>
+       <br> <input type="submit" value="Add activity" todaystasks()>
       </fieldset>
+      <h1><script> document.getElementsByTagName("activityname"); document.write(activitylist) </script></h1>
 
      <!--
      <div class="typedropdown">

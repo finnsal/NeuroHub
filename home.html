@@ -3,41 +3,33 @@
   <style>
   </style>
   <script>
-    function showTime(){
-        var date = new Date();
-        var h = date.getHours(); // 0 - 23
-        var m = date.getMinutes(); // 0 - 59
-
-        if(h == 0){
-            h = 12;
-        }
-
-        if(h > 12){
-            h = h - 12;
-        }
-
-        h = (h < 10) ? "0" + h : h;
-        m = (m < 10) ? "0" + m : m;
-
-        var time = h + ":" + m + " ";
-        document.getElementById("MyClockDisplay").innerText = time;
-        document.getElementById("MyClockDisplay").textContent = time;
-
-        setTimeout(showTime, 1000);
+    var myNodelist = document.getElementsByTagName("LI");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
     }
 
-    showTime();
-    // Add a "checked" symbol when clicking on a list item
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
     var list = document.querySelector('ul');
     list.addEventListener('click', function(ev) {
       if (ev.target.tagName === 'LI') {
         ev.target.classList.toggle('checked');
       }
     }, false);
-
     // Create a new list item when clicking on the "Add" button
     function newElement() {
-      var li = document.createElement("li");
+      var li = document.createElement("input");
       var inputValue = document.getElementById("myInput").value;
       var t = document.createTextNode(inputValue);
       li.appendChild(t);
@@ -49,7 +41,6 @@
       document.getElementById("myInput").value = "";
 
       var span = document.createElement("SPAN");
-      var txt = document.createTextNode("\u00D7");
       span.className = "close";
       span.appendChild(txt);
       li.appendChild(span);
@@ -63,32 +54,6 @@
     }
   </script>
 
-  <script>
-      function showTime(){
-          var date = new Date();
-          var h = date.getHours(); // 0 - 23
-          var m = date.getMinutes(); // 0 - 59
-
-          if(h == 0){
-              h = 12;
-          }
-
-          if(h > 12){
-              h = h - 12;
-          }
-
-          h = (h < 10) ? "0" + h : h;
-          m = (m < 10) ? "0" + m : m;
-
-          var time = h + ":" + m + " ";
-          document.getElementById("MyClockDisplay").innerText = time;
-          document.getElementById("MyClockDisplay").textContent = time;
-
-          setTimeout(showTime, 1000);
-      }
-
-      showTime();
-  </script>
 
   <head>
     <link rel="stylesheet" href="homestyle.css">
@@ -96,9 +61,6 @@
   </head>
 
   <body>
-    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-
-
     <div class="topsection">
       <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/OCR-A_char_Less-Than_Sign.svg/1200px-OCR-A_char_Less-Than_Sign.svg.png"  class="datebtn" style = "padding-right: 21px;"></a>
       <h1 class="title">Today</h1>
@@ -106,6 +68,9 @@
       <p class="date">
       <script> document.write(new Date().toLocaleDateString()); </script>
       </p>
+      <div class="dailycalendar">
+        <p id="calendarcode"></p>
+      </div>
       <div class="settings">
         <a href="settings.html"><img src="https://www.pinclipart.com/picdir/middle/39-398105_image-plus-png-i-shall-seal-the-heavens.png" class="settingsbtn"></a><!--<button class='settingsbtn'>Settings</button></a>-->
       </div>
@@ -113,16 +78,14 @@
 
 
 
-    <div class="todo">
-      <div id="myDIV" class="header">
-        <h1>To do:</h1>
+    <div class="todo" id='mydiv'>
+      <div id="mydiv" class="header"><h1>To do:</h1></div>
         <ul id="myUL" style = "list-style-type: none;">
-          <li><input type="checkbox">Test</input></li>
+          <li type="checkbox">Test</li>
           <li><input type="checkbox">Test</input></li>
         </ul>
         <input type="text" id="myInput" placeholder="Add task..."  style="display: inline-block;">
         <span onclick="newElement()" class="addBtn" style="display: inline-block;"><img src="https://www.pinclipart.com/picdir/middle/39-398105_image-plus-png-i-shall-seal-the-heavens.png" style = "width: 10%; height: 10%;"></span>
-      </div>
     </div>
   </body>
 
