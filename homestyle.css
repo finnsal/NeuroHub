@@ -34,7 +34,6 @@ body {
 }
 
 .todo{
-<<<<<<< HEAD
  height: 187px;
  width: 187px;
  background-color: #0b8074;
@@ -44,7 +43,6 @@ body {
  margin-top: 5.5px;
  border: 1px solid;
  color: black;
-=======
  height: 250px;
  width: 200px;
  background: rgba(204, 204, 204, 0.5);
@@ -54,7 +52,7 @@ body {
  margin-top: 100px;
  color: white;
  border-radius: 10px;
->>>>>>> f2f6ad592f56c0b63775c631cc8210e5953624b9
+
 }
 
 .needhelp {
