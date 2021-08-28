@@ -34,15 +34,15 @@ body {
 }
 
 .todo{
- height: 187px;
- width: 187px;
+ height: 250px;
+ width: 200px;
  background: rgba(204, 204, 204, 0.5);
- margin-right: 5.5px;
- margin-left: 5.5px;
- margin-bottom: 5.5px;
- margin-top: 5.5px;
- border: 1px solid;
+ margin-right: 100px;
+ margin-left: 30px;
+ margin-bottom: 100px;
+ margin-top: 100px;
  color: white;
+ border-radius: 10px;
 }
 
 .needhelp {
