@@ -22,7 +22,7 @@ body {
 
 .date{
  padding-top: 0px;
- padding-left: 10px;
+ padding-left: 0px;
  font-size: 30px;
  font-family: "Helvetica";
  color: #f0f7f7;
@@ -64,16 +64,18 @@ body {
 }
 
 ul li {
+  text-align: left;
   font-size: 20px;
   background: rgba(204, 204, 204, 0);
+  border-radius: 5px;
 }
 ul li:nth-child(odd) {
- background: rgba(204, 204, 204, 0);
+ background: rgba(204, 204, 204, 0.3);
 }
 ul li:hover {
  background: rgba(204, 204, 204, 0.5);
 }
-ul li:checked{
+ul li:active{
   text-decoration: line-through;
 }
 ul li:{
