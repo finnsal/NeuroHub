@@ -13,32 +13,7 @@
   letter-spacing: 7px;
 
 }
-<script>
-function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
 
-    if(h == 0){
-        h = 12;
-    }
-
-    if(h > 12){
-        h = h - 12;
-    }
-
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-
-    var time = h + ":" + m + " ";
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
-
-    setTimeout(showTime, 1000);
-}
-
-showTime();
-</script>
 .date{
   text-align: center;
   font-family: serif;
@@ -69,18 +44,4 @@ showTime();
 .settingsbtn {
   width:2%;
   height: 2%;
-}
-ul li:nth-child(odd) {
-  background: #f9f9f9;
-}
-ul li:hover {
-  background: #ddd;
-}
-ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
-ul li {
-
 }
