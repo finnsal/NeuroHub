@@ -2,8 +2,11 @@
 body {
   background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Calming-Wallpapers-HD-Free-Download.jpg);
   background-color: #cccccc;
+  background-size: cover;
   font-family: "Helvetica";
-
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .title{
@@ -39,8 +42,8 @@ body {
  background: rgba(204, 204, 204, 0.5);
  margin-right: 100px;
  margin-left: 30px;
- margin-bottom: 100px;
- margin-top: 100px;
+ margin-bottom: 00px;
+ margin-top: 00px;
  color: white;
  border-radius: 10px;
 
@@ -66,6 +69,9 @@ ul li:nth-child(odd) {
 ul li:hover {
  background: rgba(204, 204, 204, 0.5);
  text-decoration: line-through;
+}
+ul li:checked{
+
 }
 ul li:{
  background: #eb4034;
