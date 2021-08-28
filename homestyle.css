@@ -2,12 +2,15 @@
 body {
  font-family: "Helvetica";
 }
+<<<<<<< HEAD
 .title{
  font-family: "Helvetica";
  font-size: 60px;
  padding-bottom: 0px;
  display: inline-block;
 }
+=======
+>>>>>>> 709d8a183803b7ec57798092bc82e581e3e050ce
 
 .date{
  padding-top: 0px;
@@ -42,6 +45,7 @@ body {
  width:2%;
  height: 2%;
 }
+<<<<<<< HEAD
 ul li:nth-child(odd) {
  background: #f9f9f9;
 }
@@ -56,3 +60,5 @@ ul li.checked {
 ul li {
 
 }
+=======
+>>>>>>> 709d8a183803b7ec57798092bc82e581e3e050ce
