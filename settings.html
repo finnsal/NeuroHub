@@ -3,25 +3,60 @@
   <head>
     <link rel="stylesheet" href="settingsstylesheet.css">
     <title>Settings</title>
+    <style>
+    </style>
   </head>
 
   <body>
    <div class="return">
      <a href="home.html"><button class='returnbtn'>Back to home</button></a>
    </div>
-   <div class ="theme">
-     <
-   </div>
-   <div class="typedropdown">
-       <button class="typebtn">Type</button>
-       <div class="dropdown-content">
-         <ls>Lecture</ls>
-         <a href="#">Class</a>
-         <a href="#">Tutorial</a>
-         <a href="#">Lab</a>
-         <a href="#">Test</a>
-         <a href="#">Assignment</a>
-       </div>
-   </div>
+   <form action="calendar.html" method="post">
+     <fieldset>
+       <legend class="calendartable">Add activity:</legend>
+       <p>Class name:</p>
+       <textarea rows="1" cols="64" name="activityname">Enter class name</textarea>
+       <p>Type:</p>
+       <select name="activitytype">
+         <option>Class</option>
+         <option>Tutorial</option>
+         <option>Lecture</option>
+         <option>Assignment</option>
+         <option>Test</option>
+       </select>
+       <p>Day:</p>
+       <select name="activityday">
+         <option>Monday</option>
+         <option>Tuesday</option>
+         <option>Wednesday</option>
+         <option>Thursday</option>
+         <option>Friday</option>
+         <option>Saturday</option>
+         <option>Sunday</option>
+       </select>
+       <p>Date:</p><input type="date" name="activitydate">
+       <p>Start time:</p><input type="time" name="starttime"></input>
+       <p>End time:</p><input type="time" name="endtime"></input>
+       <p>Class link:</p><input type="url" name="classurl"></input> <br>
+       <p>Repeat weekly?</p>
+       <label>Yes</label><input type="radio" name="weekly"> <br>
+       <label>No</label><input type="radio" name="weekly"> <br>
+       <br> <input type="submit" value="Add activity">
+      </fieldset>
+
+     <!--
+     <div class="typedropdown">
+         <button class="typebtn">Type</button>
+         <div class="dropdown-content">
+           <ls>Lecture</ls>
+           <a href="#">Class</a>
+           <a href="#">Tutorial</a>
+           <a href="#">Lab</a>
+           <a href="#">Test</a>
+           <a href="#">Assignment</a>
+         </div>
+     </div>
+     -->
+    </form>
   </body>
 </html>
