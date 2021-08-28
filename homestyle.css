@@ -95,3 +95,6 @@ input {
 header {
   opacity: 100%;
 }
+.dailycalendar {
+  font-size: 20px;
+}
