@@ -71,8 +71,8 @@
       <script> document.write(new Date().toLocaleDateString()); </script>
       </p>
       <div class="dailycalendar">
-        <ul>
-          <li id="tasks"></li>
+        <ul id="finalul">
+          <!--<li id="tasks"></li>-->
         </ul>
         <p id="demo"></p>
         <form id="test">
@@ -83,15 +83,18 @@
         <script>
           function myFunction() {
             var x = document.getElementById("test");
+            var ul = document.getElementById("finalul")
             var li = document.createElement("li");
             var text = "";
             var i;
             for (i = 0; i < x.length ;i++) {
-              text += x.elements[i].value + "<br>";
+              //text += x.elements[i].value;
+              li.appendChild(document.createTextNode(x.elements[i].value + " "));
               //li.appendChild(x.elements[i].value);
             }
+            ul.appendChild(li);
             //document.getElementById("tasks").appendChild(li);
-            document.getElementById("tasks").innerHTML = text;
+            //document.getElementById("tasks").innerHTML = text;
           }
         </script>
         <p id="calendarcode"></p>
